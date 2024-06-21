@@ -1,0 +1,15 @@
+{% layout "default-layout.liquid" %}
+{% block %}
+    <h1>User List № {{ user.id }}</h1>
+    <form action="/deleteList" method="POST">
+        {% for item in list %}
+            <p> {{item.id}}</p>
+            <p> {{item.ref}}</p>
+            <button name="ref" value="{{ item.id }}" type="submit">Удалить ссылку</button>   
+        {% endfor %}
+    </form>
+    <form action="/list" method="POST">
+        <input type="text" title="URL" placeholder="URL" name="url">
+        <input type="submit" value="Добавить">
+    </form>
+{% endblock %}

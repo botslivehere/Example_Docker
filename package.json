@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "liquidjs": "^10.10.2",
+    "pg": "^8.11.5",
+    "sequelize": "^6.37.3",
+    "url-exist": "^2.0.2",
+    "url-exists": "^1.0.3"
+  }
+}

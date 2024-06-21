@@ -1,0 +1,7 @@
+{% layout "default-layout.liquid" %}
+{% block %}
+    <h1>User Profile</h1>
+        <p>Имя пользователя: {{ user.name }}</p>
+        <p>Роль пользователя: {{ user.role }}</p>
+    <input type="button" onClick="location.href='/logout'" value='Logout'>
+{% endblock %}

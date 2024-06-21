@@ -1,0 +1,11 @@
+{% layout "default-layout.liquid" %}
+{% block %}
+<div>
+    <h1>Authorization</h1>
+    <form action="/login" method="POST">
+        <input type="text" title="login" placeholder="login" name="login">
+        <input type="password" title="password" placeholder="password" name="password">
+        <input type="submit">
+    </form>
+    </div>
+{% endblock %}
